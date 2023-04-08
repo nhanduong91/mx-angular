@@ -88,8 +88,7 @@
             "passWithNoTests": true
           }
         }
-      },
-      "tags": []
+      }
     },
     "my-app-e2e": {
       "root": "apps/my-app-e2e",
@@ -116,9 +115,78 @@
             "lintFilePatterns": ["apps/my-app-e2e/**/*.{js,ts}"]
           }
         }
-      },
-      "tags": [],
-      "implicitDependencies": ["my-app"]
+      }
+    },
+    "web-album-feature-detail": {
+      "projectType": "library",
+      "root": "libs/web/album/feature/detail",
+      "sourceRoot": "libs/web/album/feature/detail/src",
+      "prefix": "stackblitz-nx-angular",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/album/feature/detail"],
+          "options": {
+            "jestConfig": "libs/web/album/feature/detail/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/album/feature/detail/src/**/*.ts",
+              "libs/web/album/feature/detail/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "web-album-feature-list": {
+      "projectType": "library",
+      "root": "libs/web/album/feature/list",
+      "sourceRoot": "libs/web/album/feature/list/src",
+      "prefix": "stackblitz-nx-angular",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/album/feature/list"],
+          "options": {
+            "jestConfig": "libs/web/album/feature/list/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/album/feature/list/src/**/*.ts",
+              "libs/web/album/feature/list/src/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular",
+    "packageManager": "npm"
+  },
+  "defaultProject": "my-app",
+  "schematics": {
+    "@nrwl/angular:application": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "css",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "css"
     }
   }
 }

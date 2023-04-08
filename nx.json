@@ -46,5 +46,20 @@
       "style": "css"
     }
   },
-  "defaultProject": "my-app"
+  "defaultProject": "my-app",
+  "projects": {
+    "my-app": {
+      "tags": []
+    },
+    "my-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["my-app"]
+    },
+    "web-album-feature-detail": {
+      "tags": []
+    },
+    "web-album-feature-list": {
+      "tags": ["type:feature.scope:web"]
+    }
+  }
 }
