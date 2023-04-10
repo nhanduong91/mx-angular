@@ -20,6 +20,9 @@
       ],
       "@stackblitz-nx-angular/web/album/feature/list": [
         "libs/web/album/feature/list/src/index.ts"
+      ],
+      "@stackblitz-nx-angular/web/album/feature/shell": [
+        "libs/web/album/feature/shell/src/index.ts"
       ]
     }
   },

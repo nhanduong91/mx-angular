@@ -166,6 +166,31 @@
           }
         }
       }
+    },
+    "web-album-feature-shell": {
+      "projectType": "library",
+      "root": "libs/web/album/feature/shell",
+      "sourceRoot": "libs/web/album/feature/shell/src",
+      "prefix": "as",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/web/album/feature/shell"],
+          "options": {
+            "jestConfig": "libs/web/album/feature/shell/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/web/album/feature/shell/src/**/*.ts",
+              "libs/web/album/feature/shell/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

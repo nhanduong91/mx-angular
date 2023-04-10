@@ -59,7 +59,10 @@
       "tags": []
     },
     "web-album-feature-list": {
-      "tags": ["type:feature.scope:web"]
+      "tags": ["type:feature", "scope:web"]
+    },
+    "web-album-feature-shell": {
+      "tags": ["type:feature", "scoope:web"]
     }
   }
 }
