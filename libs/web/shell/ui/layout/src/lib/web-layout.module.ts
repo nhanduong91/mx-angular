@@ -7,5 +7,6 @@ import { LayoutComponent } from './layout.component';
   declarations: [
     LayoutComponent
   ],
+  exports: [LayoutComponent]
 })
-export class LayoutModule {}
+export class WebLayoutModule {}
