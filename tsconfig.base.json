@@ -23,6 +23,15 @@
       ],
       "@stackblitz-nx-angular/web/album/feature/shell": [
         "libs/web/album/feature/shell/src/index.ts"
+      ],
+      "@stackblitz-nx-angular/web/shared/utils": [
+        "libs/web/shared/utils/src/index.ts"
+      ],
+      "@stackblitz-nx-angular/web/shell/feature": [
+        "libs/web/shell/feature/src/index.ts"
+      ],
+      "@stackblitz-nx-angular/web/shell/ui/layout": [
+        "libs/web/shell/ui/layout/src/index.ts"
       ]
     }
   },

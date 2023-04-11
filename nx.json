@@ -63,6 +63,15 @@
     },
     "web-album-feature-shell": {
       "tags": ["type:feature", "scoope:web"]
+    },
+    "web-shared-utils": {
+      "tags": ["type:utils", "scope:web"]
+    },
+    "web-shell-feature": {
+      "tags": []
+    },
+    "web-shell-ui-layout": {
+      "tags": ["type:ui"]
     }
   }
 }
